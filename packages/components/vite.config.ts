@@ -4,6 +4,9 @@ import vue from '@vitejs/plugin-vue';
 import dts from 'vite-plugin-dts';
 // @ts-ignore
 import DefineOptions from 'unplugin-vue-define-options/vite';
+import Components from 'unplugin-vue-components/vite';
+import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
+
 export default defineConfig({
   test: {
     environment: 'happy-dom'
@@ -13,7 +16,7 @@ export default defineConfig({
     //minify: false,
     rollupOptions: {
       //忽略打包vue文件
-      external: ['vue', /\.less/, '@berni/utils'],
+      external: ['vue', /\.less/, '@berni/utils', 'ant-design-vue'],
       input: ['index.ts'],
       output: [
         {
@@ -45,6 +48,7 @@ export default defineConfig({
       name: 'berni'
     }
   },
+
   plugins: [
     vue(),
     dts({
@@ -54,6 +58,9 @@ export default defineConfig({
       tsConfigFilePath: '../../tsconfig.json'
     }),
     DefineOptions(),
+    Components({
+      resolvers: [AntDesignVueResolver()],
+    }),
     {
       name: 'style',
       generateBundle(config, bundle) {

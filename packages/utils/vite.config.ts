@@ -1,12 +1,14 @@
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import { resolve } from 'path';
+
 export default defineConfig({
   build: {
     //压缩
     minify: false,
     rollupOptions: {
       input: ['index.ts'],
+      external: ['axios', '@vueuse/core'],
       output: [
         {
           format: 'es',
@@ -24,7 +26,7 @@ export default defineConfig({
           //让打包目录和我们目录对应
           preserveModules: true,
           //配置打包根目录
-          dir: resolve(__dirname, './dist/lib')
+          dir: resolve(__dirname, './dist/lib'),
         }
       ]
     },
@@ -43,4 +45,5 @@ export default defineConfig({
       tsConfigFilePath: '../../tsconfig.json'
     })
   ]
+
 });

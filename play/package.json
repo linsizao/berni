@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@berni/components": "workspace:^1.0.0",
+    "@berni/utils": "workspace:^1.0.0",
     "berni": "workspace:^1.0.5"
   }
 }

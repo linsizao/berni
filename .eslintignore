@@ -2,3 +2,5 @@
 /packages/bus
 dist
 node_modules
+
+**.md
