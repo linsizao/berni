@@ -24,7 +24,7 @@ const delPath = async (path: string) => {
       }
     });
 
-    if (path != `${pkgPath}/berni`) fs.rmdirSync(path);
+    if (path != `${pkgPath}/berni-ui`) fs.rmdirSync(path);
   }
 };
 export default delPath;

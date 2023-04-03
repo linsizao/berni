@@ -1,5 +1,5 @@
 {
-  "name": "berni",
+  "name": "berni-ui",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
   "scripts": {
     "build": "gulp -f packages/components/script/build/index.ts & pnpm run --filter ./packages/utils build",
     "publish:berni": "gulp -f packages/components/script/publish/index.ts",
-    "publish:easayestutils": "gulp -f packages/utils/publish/index.ts",
+    "publish:utils": "gulp -f packages/utils/publish/index.ts",
     "docs:dev": "pnpm run --filter site docs:dev",
     "docs:build": "pnpm run --filter site docs:build",
     "docs:deploy": "pnpm run --filter site docs:deploy",

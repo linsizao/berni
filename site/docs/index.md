@@ -1,23 +1,23 @@
 ---
 layout: home
 
-title: berni
+title: berni-ui
 titleTemplate: 一个快速搭建Vue3组件库的框架
 
 hero:
-  name: berni
+  name: berni-ui
   text: 一个快速搭建Vue3组件库的框架
   tagline: 让你的组件库开发更简单
   image:
     /src: /logo.png
-    alt: berni
+    alt: berni-ui
   actions:
     - theme: brand
       text: 开始
       link: /guild/introduce
     - theme: alt
       text: 在 GitHub 上查看
-      link: https://github.com/berni/berni
+      link: https://github.com/linsizao/berni-ui
 
 features:
   - icon: 💡

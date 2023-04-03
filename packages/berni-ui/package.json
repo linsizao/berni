@@ -1,5 +1,5 @@
 {
-  "name": "berni",
+  "name": "berni-ui",
   "version": "1.0.7",
   "main": "lib/index.js",
   "module": "es/index.mjs",
@@ -8,7 +8,7 @@
     "lib"
   ],
   "keywords": [
-    "berni",
+    "berni-ui",
     "vue3组件库"
   ],
   "sideEffects": [
@@ -20,9 +20,9 @@
   "typings": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qddidi/berni"
+    "url": "https://github.com/linsizao/berni"
   },
   "dependencies": {
-    "@berni/utils": "^1.0.2"
+    "@berni-ui/utils": "^1.0.2"
   }
 }

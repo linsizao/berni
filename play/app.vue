@@ -5,8 +5,8 @@
   </div>
 </template>
 <script lang="ts" setup>
-  import { Button } from '@berni/components'
-  import { a } from '@berni/utils'
+  import { Button } from '@berni-ui/components'
+  import { a } from '@berni-ui/utils'
 
   a('123')
 </script>

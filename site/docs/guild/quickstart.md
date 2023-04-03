@@ -23,11 +23,11 @@ pnpm install
 **注意:** 这里需要先执行一次打包,因为组件库文档引用了打包后的文件
 
 ```
-pnpm run berni:build
+pnpm run build
 ```
 
 - 启动测试项目
 
 ```
-pnpm run berni:dev
+pnpm run dev
 ```

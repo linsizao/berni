@@ -1,11 +1,11 @@
 import DefaultTheme from "vitepress/theme";
-import berni from "berni"
+import berniUi from "berni-ui"
 export default {
   ...DefaultTheme,
   enhanceApp: async ({ app }) => {
     // app is the Vue 3 app instance from `createApp()`. router is VitePress'
     // custom router. `siteData`` is a `ref`` of current site-level metadata.
-    app.use(berni);
+    app.use(berniUi);
 
   },
 };

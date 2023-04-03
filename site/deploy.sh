@@ -9,7 +9,7 @@ npm run docs:build
 # 进入待发布的目录
 cd docs/.vitepress/dist
 
-git remote add berni https://github.com/berni/berni.git
+git remote add berni https://github.com/linsizao/berni.git
 git add -A
 git commit -m 'deploy'
 

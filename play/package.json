@@ -14,8 +14,8 @@
     "vite": "^4.1.1"
   },
   "dependencies": {
-    "@berni/components": "workspace:^1.0.0",
-    "@berni/utils": "workspace:^1.0.0",
-    "berni": "workspace:^1.0.5"
+    "@berni-ui/components": "workspace:^1.0.0",
+    "@berni-ui/utils": "workspace:^1.0.0",
+    "berni-ui": "workspace:^1.0.5"
   }
 }

@@ -16,7 +16,7 @@ export default defineConfig({
     //minify: false,
     rollupOptions: {
       //忽略打包vue文件
-      external: ['vue', /\.less/, '@berni/utils', 'ant-design-vue'],
+      external: ['vue', /\.less/, '@berni-ui/utils', 'ant-design-vue'],
       input: ['index.ts'],
       output: [
         {
@@ -28,7 +28,7 @@ export default defineConfig({
           preserveModules: true,
           exports: 'named',
           //配置打包根目录
-          dir: '../berni/es'
+          dir: '../berni-ui/es'
         },
         {
           //打包格式
@@ -39,13 +39,13 @@ export default defineConfig({
           preserveModules: true,
           exports: 'named',
           //配置打包根目录
-          dir: '../berni/lib'
+          dir: '../berni-ui/lib'
         }
       ]
     },
     lib: {
       entry: './index.ts',
-      name: 'berni'
+      name: 'berni-ui'
     }
   },
 
@@ -53,7 +53,7 @@ export default defineConfig({
     vue(),
     dts({
       entryRoot: 'src',
-      outputDir: ['../berni/es/src', '../berni/lib/src'],
+      outputDir: ['../berni-ui/es/src', '../berni-ui/lib/src'],
       //指定使用的tsconfig.json为我们整个项目根目录下,如果不配置,你也可以在components下新建tsconfig.json
       tsConfigFilePath: '../../tsconfig.json'
     }),

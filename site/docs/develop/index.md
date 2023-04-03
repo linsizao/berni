@@ -8,11 +8,11 @@
 
   -- cli 脚手架(create-berni)
 
-  -- components 本地开发组件库(@berni/components)
+  -- components 本地开发组件库(@berni-ui/components)
 
-  -- berni 打包后组件库,既要发布的组件库(berni)
+  -- berni-ui 打包后组件库,既要发布的组件库(berni-ui)
 
-  -- utils 工具包(@berni/utils)
+  -- utils 工具包(@berni-ui/utils)
 
 -- play 测试开发组件库的Vue3项目目录
 

@@ -5,7 +5,7 @@
 
 ## 打包
 
-> 执行`pnpm run berni:build`即可完成打包,打包后的文件在目录`packages/berni下`。当然如果你想修改命令脚本的话,可以在 berni/package.json 中的 script 字段中修改
+> 执行`pnpm run berni:build`即可完成打包,打包后的文件在目录`packages/berni-ui下`。当然如果你想修改命令脚本的话,可以在 berni/package.json 中的 script 字段中修改
 
 ## 发布
 
