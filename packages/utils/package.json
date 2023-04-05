@@ -13,5 +13,6 @@
   "scripts": {
     "build": "vite build",
     "release": "release-it"
-  }
+  },
+  "types": "./dist/lib/index.d.ts"
 }
